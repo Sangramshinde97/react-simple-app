@@ -19,7 +19,7 @@ pipeline {
                     def remoteDir = "/usr/share/nginx/html/"
 
                     // Use SCP to copy the build folder to the remote EC2 instance
-                    sh "scp -i /home/ec2-user/ubuntukey.pem -r ${sourceDir} ${remoteUser}@${remoteHost}:${remoteDir}"
+                    sh "scp -o StrictHostKeyChecking=no -i /home/ec2-user/ubuntukey.pem -r ${sourceDir} ${remoteUser}@${remoteHost}:${remoteDir}"
 
                     // Optional: You can add additional commands to run on the remote EC2 instance after copying the files.
                     // For example, you might want to restart a web server or perform other setup tasks.
