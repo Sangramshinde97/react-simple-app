@@ -24,7 +24,7 @@ pipeline {
                     // Optional: You can add additional commands to run on the remote EC2 instance after copying the files.
                     // For example, you might want to restart a web server or perform other setup tasks.
                     // Restart Nginx on the remote EC2 instance
-                    sh "ssh -i /path/to/your/ssh/ubuntukey.pem ${remoteUser}@${remoteHost} 'sudo systemctl restart nginx'"
+                    sh "ssh -i /home/ec2-user/ubuntukey.pem ${remoteUser}@${remoteHost} 'sudo systemctl restart nginx'"
                 }
             }
         }
