@@ -26,7 +26,7 @@ pipeline {
       steps {
         script {
           // Build the Docker image
-          sh "docker build -t $DOCKER_IMAGE_NAME $DOCKERFILE_PATH"
+          sh " sudo docker build -t $DOCKER_IMAGE_NAME $DOCKERFILE_PATH"
 
           // Log in to AWS ECR
           sh "aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ECR_REPOSITORY_NAME"
