@@ -15,7 +15,7 @@ pipeline {
                     // Replace the following placeholders with your actual values
                     def sourceDir = "build/"
                     def remoteUser = "ubuntu"
-                    def remoteHost = "13.233.84.29"
+                    def remoteHost = "65.2.10.148"
                     def remoteDir = "/usr/share/nginx/html/"
 
                     // Use SCP to copy the build folder to the remote EC2 instance
