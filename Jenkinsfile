@@ -7,14 +7,6 @@ pipeline {
                 checkout scm
             }
         }
-
-        stage('Build and Package') {
-            steps {
-                sh 'npm install'
-                sh 'npm run build'
-            }
-        }
-
          stage('Build and Push Docker Image') {
       agent any
       environment {
