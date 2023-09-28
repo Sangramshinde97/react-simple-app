@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <h1>Hello, sangram,akshay,vinesh and React,abc!</h1>
+      <h1>Hello, sangram,akshay,vinesh and React,abc,pqr!</h1>
     </div>
   );
 }
